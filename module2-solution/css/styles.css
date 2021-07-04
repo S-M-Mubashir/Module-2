@@ -1,0 +1,76 @@
+/* Base Styles */
+* {
+	box-sizing: border-box;
+	margin : 0;
+	padding: 0;
+}
+
+title {
+	font-weight: 3
+}
+
+section div {
+	border: 1px solid black;
+	position: absolute;
+	top:0px;
+	right:0px;
+	font-size: 24px;
+
+
+}
+section {
+  height: 200px;
+  background-color: grey;
+  font-family: Helvetica;
+  overflow: auto;
+  padding-top: 40px;
+  position: relative;
+
+}
+
+
+/* Responsive Framework */
+.row{
+	width: 100%;
+}
+
+/* Desktop View */
+@media (min-width:992px){
+  .col-lg-4 {
+  	float :left;
+  	border : 1px solid black;
+    border-spacing: 0px 15px;
+
+}
+  .col-lg-4 {
+    width: 33.33%;
+
+  }
+
+ }
+
+ /* Laptop View */
+@media (min-width:768px) and (max-width: 991px){
+  .col-md-6,.col-md-12 {
+  	float :left;
+  	border : 1px solid black;
+
+}
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+ }
+ /* Mobile View */
+@media (max-width: 767px){
+	.col-sm-12 {
+  	float :left;
+  	border : 1px solid black;
+
+}
+  .col-sm-12 {
+    width: 100%;
+  }
+ }
